@@ -6,7 +6,20 @@
     <script src="index.js"></script>
 </head>
 <body>
-    
+    <div class="formHolder" role="formHolder">
+        <form id="inputForm">
+            <label for="stateInput">States (use postal abbreivations, separated by commas):</label>
+            <input type="text" id="stateInput" placeholder="WI,MI" required>
+            <br><br>
+            <label for="maxResults">Max Results Desired</label>
+            <br>
+            <input type="number" id="maxResults" placeholder="10" required>
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <div class="resultsHolder" role="resultsHolder">
+    </div>
 </body>
 
 </html>
